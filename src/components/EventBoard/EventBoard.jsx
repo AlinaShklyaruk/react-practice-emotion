@@ -6,7 +6,16 @@ export const EventBoard = ({ events }) => {
     return (
         <Board>
             {events.map(({name, location, speaker, type, time}) => (
-                <EventCard key={name} name={name} location={location} speaker={speaker} type={type} start={time.start} end={time.end} />))}</Board>
+                <EventCard
+                    key={name}
+                    name={name}
+                    location={location}
+                    speaker={speaker}
+                    type={type}
+                    start={time.start}
+                    end={time.end}
+                />))}
+        </Board>
             );
 };
 
